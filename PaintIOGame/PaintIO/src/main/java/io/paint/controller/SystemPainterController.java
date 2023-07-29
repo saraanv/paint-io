@@ -70,12 +70,12 @@ public final class SystemPainterController extends TimerTask {
             if (moveTo.equals(MoveTo.LEFT) || moveTo.equals(MoveTo.RIGHT)) {
                 moveTo = switch (moveToNumber) {
                     case 1 -> MoveTo.TOP;
-                    case 2 , default -> MoveTo.BOTTOM;
+                    default -> MoveTo.BOTTOM;
                 };
             } else if (moveTo.equals(MoveTo.TOP) || moveTo.equals(MoveTo.BOTTOM)) {
                 moveTo = switch (moveToNumber) {
                     case 1 -> MoveTo.LEFT;
-                    case 2 , default -> MoveTo.RIGHT;
+                    default -> MoveTo.RIGHT;
                 };
             }
         }
