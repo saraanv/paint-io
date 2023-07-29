@@ -18,7 +18,7 @@ public abstract class MainView extends JFrame {
 
     protected void create(final AppearanceReady appearanceReady) {
         SwingUtilities.invokeLater(() -> {
-            setTitle("Game paint");
+            setTitle("Paint IO Game");
             initComponents();
             setResizable(false);
             setLocationRelativeTo(null);
@@ -76,7 +76,7 @@ public abstract class MainView extends JFrame {
         gamePageLayout.setHorizontalGroup(gamePageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGap(0 , 0 , Short.MAX_VALUE));
         gamePageLayout.setVerticalGroup(gamePageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGap(0 , 464 , Short.MAX_VALUE));
 
-        btnStart.setText("Start game");
+        btnStart.setText("let's go");
 
         sSpeed.setMaximum(3);
         sSpeed.setValue(1);
