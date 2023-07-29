@@ -29,12 +29,12 @@ public final class MainController extends MainView implements AppearanceReady {
     protected void onClickBtnStartGame() {
         if (!running) {
             running = true;
-            SwingUtilities.invokeLater(() -> btnStart.setText("Stop game"));
+            SwingUtilities.invokeLater(() -> btnStart.setText("Pause"));
             ready();
         } else {
             gamePage.clear();
             running = false;
-            SwingUtilities.invokeLater(() -> btnStart.setText("Start game"));
+            SwingUtilities.invokeLater(() -> btnStart.setText("Let's Go"));
         }
     }
 
