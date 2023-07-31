@@ -130,8 +130,8 @@ public final class MainController extends MainView implements AppearanceReady {
 
     private void gameOver(final io.paint.data.model.Painter winner , final Painter... loser) {
         onClickBtnStartGame();
-        final String message = String.format("Winner: %s :: The Loser: %s" , (winner == null ? "" : winner) , Arrays.toString(loser));
-        SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(null , message , "Game over" , JOptionPane.INFORMATION_MESSAGE));
+        final String message = String.format("Winner Is : %s :: The Loser Is: %s" , (winner == null ? "" : winner) , Arrays.toString(loser));
+        SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(null , message , "Game Is Over" , JOptionPane.INFORMATION_MESSAGE));
     }
 
 }
